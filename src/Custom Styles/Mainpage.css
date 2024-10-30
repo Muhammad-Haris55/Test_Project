@@ -1,0 +1,30 @@
+.maincontiner {
+    width: 100%;
+    position: relative;
+    overflow: visible!important;
+}
+
+.curvedbar {
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    position: relative;
+    z-index: -1!important;
+    bottom: 15px;
+    border-radius: 35px;
+    border-top: 50px solid #9ECCEA;;
+}
+.mainbody{
+    width: 100%;
+    position: absolute;
+    z-index: 0;
+    top: 0px;
+    background-color: #EEF9FF;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+}
+.stock{
+    width: 100%;
+    height: 100%;
+    border: 1px solid black;
+}

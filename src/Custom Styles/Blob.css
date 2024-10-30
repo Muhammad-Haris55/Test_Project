@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css?family=Exo+2');
+
+
+/* Main Big Blob */
+.gooey2 {
+    width: 100%;
+    height: 700px;
+    border-radius: 105% 105% 100% 100% / 90% 90% 100% 100%;
+    background-color: #7CC9E83D;
+    animation: morph2 8s ease-in-out infinite;
+    transform-style: preserve-3d;
+    will-change: border-radius;
+    position: absolute;
+    z-index: 0;
+    left: 0% !important;
+}
+
+@keyframes morph2 {
+    0% {
+        border-radius: 60% 40% 70% 50% / 50% 60% 30% 70%;
+    }
+    20% {
+        border-radius: 70% 50% 60% 40% / 60% 40% 70% 50%;
+    }
+    40% {
+        border-radius: 50% 70% 40% 60% / 50% 30% 60% 40%;
+    }
+    60% {
+        border-radius: 60% 30% 50% 70% / 70% 50% 40% 60%;
+    }
+    80% {
+        border-radius: 40% 60% 30% 50% / 60% 70% 50% 40%;
+    }
+    100% {
+        border-radius: 60% 40% 70% 50% / 50% 60% 30% 70%;
+    }
+}
+
+
+/* Behind phone blob */
+.gooey {
+
+    overflow-y: hidden !important;
+    background: rgba(26, 199, 121, 0.843);
+    background: linear-gradient(90deg, rgba(9, 219, 125, 0.092) 3%, rgba(160, 201, 228, 0.03) 90%);
+    border-radius: 42% 58% 70% 30% / 45% 45% 55% 55%;
+    width: 360px;
+    height: 395px;
+    /* border: 1px solid black; */
+    animation: morph 7s linear infinite;
+    transform-style: preserve-3d;
+    position: absolute;
+    top: 150px;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    will-change: border-radius;
+}
+
+
+.gooey:before,
+.gooey:after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: 42% 58% 70% 30% / 45% 45% 55% 55%;
+    box-shadow: 25px 5px 0px#9ecceddf;
+    will-change: border-radius, transform, opacity;
+    animation-delay: 1400ms;
+    background: rgba(115, 204, 164, 0.748);
+    background: linear-gradient(90deg, rgba(82, 153, 121, 0.597) 30%, rgba(81, 125, 155, 0.377) 80%);
+}
+
+.gooey:before {
+    animation: morph 15s linear infinite;
+    opacity: .21;
+    animation-duration: 4.5s;
+}
+
+.gooey3 {
+    background: rgba(26, 199, 121, 0.563);
+    background: linear-gradient(90deg, rgba(9, 219, 125, 0.702) 3%, rgba(160, 201, 228, 0.358) 90%);
+    border-radius: 42% 58% 50% 40% / 50% 55% 55% 55%;
+    width: 90px;
+    height: 90px;
+    animation: morph 7s linear infinite;
+    transform-style: preserve-3d;
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    z-index: 10;
+    outline: 1px solid transparent;
+    will-change: border-radius;
+    overflow-y: hidden !important;
+}
+
+
+.gooey3:before,
+.gooey3:after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: 42% 58% 70% 30% / 45% 45% 55% 55%;
+    box-shadow: 15px 55px 0px#9ecced;
+    will-change: border-radius, transform, opacity;
+    animation-delay: 1400ms;
+    background: rgba(115, 204, 164, 0.616);
+    background: linear-gradient(90deg, rgba(55, 174, 120, 0.576) 30%, rgba(81, 125, 155, 0.436) 80%);
+}
+
+.gooey3:before {
+    animation: morph 15s linear infinite;
+    opacity: .21;
+    animation-duration: 4.5s;
+}
+
+
+
+#phone {
+    position: absolute;
+    top: 340px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+
+}
+
+@keyframes morph {
+
+    0%,
+    100% {
+        border-radius: 42% 58% 70% 30% / 45% 45% 55% 55%;
+        transform: translate3d(0, 0, 0) rotateZ(0.01deg);
+        opacity: .89;
+    }
+
+    34% {
+        border-radius: 70% 30% 46% 54% / 30% 29% 71% 70%;
+        transform: translate3d(0, 5px, 0) rotateZ(0.01deg);
+        opacity: .79;
+    }
+
+    50% {
+        opacity: .69;
+        transform: translate3d(0, 0, 0) rotateZ(0.01deg);
+    }
+
+    67% {
+        opacity: .59;
+        border-radius: 100% 60% 60% 100% / 100% 100% 60% 60%;
+        transform: translate3d(0, -3px, 0) rotateZ(0.01deg);
+    }
+}
+
+/* Blobs and image container */
+.main {
+    width: 50vw;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    z-index: 2000000 !important;
+    bottom: 0px;
+}

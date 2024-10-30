@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+.Hero {
+    overflow: hidden !important;
+    min-height: 100dvh;
+}
+
+.leftherosec div h1 {
+    white-space: nowrap;
+    font-size: 3.5vw;
+    font-family: "Mulish", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    color: #333333;
+    position: relative;
+    z-index: 100;
+    font-style: normal;
+}
+
+.belowrows{
+    position: relative;
+    top: 50px;
+}
+#color {
+    color: #388FCB;
+}
+
+.Mfont {
+    font-size: 15px;
+    font-family: "Mulish", sans-serif;
+}
+
+.lefttext h3 {
+    color: #388FCB;
+    font-family: "Mulish", sans-serif;
+    font-size: 16px;
+}
+
+#arrow {
+    width: 17px;
+    margin-top: 2.5px;
+}
+#heroblob1{
+    position: absolute;
+    top:30px;
+    left: 10px;
+    transform: rotate(20deg);
+    /* opacity: 0.6; */
+}
+
+#arrow2 {
+    margin-top: 2.5px;
+}
+
+.btnsection {
+    font-family: "Mulish", sans-serif !important;
+}
+
+#emailsvg {
+    position: absolute;
+    left: 95px;
+    margin-top: 1px;
+}
+
+#emailinput {
+    font-family: "Mulish", sans-serif;
+    border-radius: 30px !important;
+    height: 4vw;
+    padding-left: 37px;
+    border-color: #7CC140 !important;
+    box-shadow: none !important;
+    outline: none !important;
+
+    &:hover {
+        border-color: #72b934 !important;
+    }
+}
+
+#socials {
+
+    background: rgb(56, 143, 203);
+    background: linear-gradient(270deg, rgba(56, 143, 203, 1) 0%, rgba(124, 193, 64, 1) 100%);
+    padding: 5px;
+    color: white;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#userstext{
+    font-weight: 800;
+    font-size: 15px;
+    font-family: "Mulish", sans-serif;
+    background: linear-gradient(270deg, rgba(56, 143, 203, 1) 0%, rgba(124, 193, 64, 1) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+.row1{
+    background: rgb(56, 143, 203);
+    background: linear-gradient(270deg, rgb(30, 127, 193) 0%, rgb(130, 173, 93) 100%);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.row2{
+    
+    background: rgb(56, 143, 203);
+    background: linear-gradient(90deg, rgba(56, 143, 203, 1) 0%, rgb(125, 188, 71) 100%);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
